@@ -1,0 +1,84 @@
+/* Universal styles */
+body {
+  font-family:"Raleway", sans-serif;
+  font-size:16px;
+}
+
+/* Header section */
+header {
+  height:4rem;
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+.brand img {
+  height: 2rem;
+}
+.brand h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #a6a6a6;
+}
+.brand h1 strong {
+  font-weight: 700;
+  color:  #4d4d4d;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+}
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.nav a {
+  border-right: 16px solid hsl(180, 60%, 70%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  color:  #4d4d4d;
+  white-space: nowrap;
+}
+/* remove vertical line right of "sign-in" */
+.nav a:nth-child(0n+4) {
+  border-right: none;
+}
+/* highlight links when hovering */
+.nav a:hover {
+  color:black;
+  text-decoration: underline;
+}
+/* hide mobile links in full-screen */
+.mobile_nav {
+  display: none;
+}
+
+/* banner section */
+.banner {
+  display:inline-flex;
+  background-color: hsl(0, 0%, 85%);
+  padding: 2rem 1.5rem;
+  justify-content: flex-start;
+
+  width:100%;
+}
+.banner img {
+  max-width:60%;
+  border: 1px solid red;
+}
+.banner_rt {
+  border: 1px solid red;
+  max-width: 25%;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
