@@ -3,7 +3,27 @@ body {
   font-family:"Raleway", sans-serif;
   font-size:16px;
 }
+h2 {
+    font-size: 1.75rem;
+    color: hsl(0, 0%, 35%);
+    font-weight: 800;
 
+}
+h3 {
+  font-weight: 600;
+  color: hsl(0, 0%, 35%);
+  font-size: 1.1rem;
+    line-height: 1.5;
+}
+p {
+  font-weight: 400;
+  color: hsl(0, 0%, 35%);
+  font-size:0.9rem;
+  line-height: 1.5;
+}
+a:hover {
+  text-decoration: underline;
+}
 /* Header section */
 header {
   height:4rem;
@@ -28,6 +48,7 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  margin-left: 24px;
 
 }
 .nav {
@@ -51,50 +72,52 @@ header {
   border-right: none;
 }
 /* highlight links when hovering */
-.nav a:hover {
+/* .nav a:hover {
   color:black;
   text-decoration: underline;
-}
+} */
 /* hide mobile links in full-screen */
 .mobile_nav {
   display: none;
 }
 
 /* banner section */
-.banner {
-  display:inline-flex;
+.section1 {
+  display:flex;
   background-color: hsl(0, 0%, 85%);
-  padding: 2rem 1.5rem;
+  /* padding: 2rem 1.5rem; */
   justify-content: flex-start;
-
   width:100%;
 }
-.banner img {
-  max-width:60%;
+.section1_image_container {
+  max-width: 55%;
+  padding: 2rem 1.5rem;
 }
-.banner_col {
+.section1 img {
+  max-width:100%;
+}
+.section1_rightcol {
   max-width: 25%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-left: 1.5rem;
 }
-.banner_col h2,
-.banner_col h3 {
+.section1_rightcol h2,
+.section1_rightcol h3 {
   margin-bottom: 1.25rem;
-  color: hsl(0, 0%, 35%)
-}
-.banner_col h2 {
-  line-height: 3rem;
-  font-weight: 800;
-  font-size: 1.75rem;
-}
-.banner_col h3 {
-  line-height: 1.75rem;
-  font-weight: 600;
 
 }
-.banner_col a {
+.section1_rightcol h2 {
+  line-height: 2rem;
+
+
+}
+.section1_rightcol h3 {
+  line-height: 1.75rem;
+
+}
+.section1_rightcol a {
   width: 100%;
   background-color: hsl(0, 0%, 35%);
   padding:0.5rem 0;
@@ -103,8 +126,168 @@ header {
   border:1px solid hsl(0, 0%, 35%);
 }
 /* highlight "start here" when hovering */
-.banner_col a:hover {
+.section1_rightcol a:hover {
   background-color:hsl(0, 0%, 85%);
   border:1px solid hsl(0, 0%, 35%);
   color:hsl(0, 0%, 35%);
+  text-decoration: none;
 }
+/* Section2: Information */
+.section2 {
+  display:flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.section2_leftcol {
+  max-width:55%;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section2_leftcol img {
+  width:100%;
+}
+.section2_quote {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 10%)
+}
+.section2_rightcol {
+    /* padding: 2rem 0; */
+  border-left:1px solid  hsl(0, 0%, 85%);
+  /* width:40%; */
+  /* width:50% */
+}
+.section2_rightcol img {
+  width: 35%;
+  /* height: auto; */
+  padding-left:1rem;
+  padding-right: 1rem;
+}
+.section2_rightcol_wrapper {
+  padding-top:2rem;
+  padding-bottom: 2rem;
+}
+.section2_rightcol_container {
+  display: flex;
+  line-height: 2;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  border-bottom:2.5px solid  hsl(0, 0%, 85%);
+  width: 100%;
+}
+.section2_container_text p {
+  padding-top: 0.5rem;
+}
+.section2_container_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex: 0 0 auto; */
+}
+.section2_rightcol_container:first-child {
+  padding-top: 0;
+}
+.section2_rightcol_container:last-child {
+  background-color: hsl(0, 0%, 85%);
+}
+.section2_mobile {
+  display: none;
+}
+.section2_container_link a{
+  color:hsl(210, 100%, 60%);
+}
+/* highlight "read more" links when hovering */
+/* .main_link:hover a{
+  text-decoration: underline;
+} */
+/* Section3: Courses  */
+.section3 {
+  max-width:100%;
+  background-color: hsl(0, 0%, 90%);
+  padding:2rem 4.5rem;
+}
+.section3 h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.section3_row {
+  display:flex;
+  width: 100%;
+}
+.section3_row_top {
+  margin-bottom: 2rem;
+}
+.section3_item {
+   background-color: hsl(0, 0%, 100%);
+   width:100%;
+}
+.section3_item img {
+   width:100%;
+   height:auto;
+}
+.section3_item:nth-child(0n+2) {
+  margin-right:1rem;
+  margin-left:1rem;
+}
+.section3_item_text {
+  padding: 1rem;
+}
+.section3_item_callout {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/* Thesis section */
+.section_head {
+  padding:2rem 0;
+  text-align: center;
+}
+.section4 {
+  width: 100%;
+}
+.section4_container {
+  display:flex;
+  justify-content: flex-start;
+}
+.section4_main{
+  max-width:55%;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section4_main video {
+  width: 100%;
+}
+.section4_item {
+  display: flex;
+  align-items: center;
+}
+.section4_item img {
+  width: 35%;
+  margin: 1rem;
+}
+.section4_item:first-child {
+  background-color: hsl(0, 0%, 85%);
+}
+/* Footer */
+.footer_container {
+  display:flex;
+  border-top:1px solid hsl(0, 0%, 85%);
+  height: 4rem;
+}
+.footer_text {
+  flex-grow: 1;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.footer_text_wide {
+  margin-top: 1rem;
+}
+.footer_text,
+.footer_text_wide a {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 35%)
+}
+.footer_text_wide a {
+  padding-right: 1rem;
