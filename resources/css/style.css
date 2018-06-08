@@ -14,12 +14,14 @@ h3 {
   color: hsl(0, 0%, 35%);
   font-size: 1.1rem;
     line-height: 1.5;
+      font-family:"Montserrat"
 }
 p {
   font-weight: 400;
   color: hsl(0, 0%, 35%);
   font-size:0.9rem;
   line-height: 1.5;
+  font-family:"Montserrat"
 }
 /* Highlight text links throughout site */
 a:hover {
@@ -73,10 +75,9 @@ header {
 .mobile_nav {
   display: none;
 }
-/* 650px breakpoint, where header link elements contact logo */
+/* 650px breakpoint*/
 @media only screen and (max-width: 650px){
   header {
-    /* display: flex; */
     justify-content: space-between;
   }
   .brand h1,
@@ -100,7 +101,7 @@ header {
   width:100%;
 }
 .section1_image_container {
-  width: 55%;
+  width: 60%;
   padding: 2rem 1.5rem;
 }
 .section1 img {
@@ -128,7 +129,6 @@ header {
   background-color: hsl(0, 0%, 35%);
   padding:0.5rem;
   text-align: center;
-  /* color:hsl(0, 0%, 100%); */
   border:1px solid hsl(0, 0%, 35%);
 }
 .section1_start a {
@@ -149,6 +149,7 @@ header {
   .section1 {
     display: block;
     width: 100%;
+    padding-bottom: 2rem;
   }
   .section1_image_container  {
     width: 100%;
@@ -163,6 +164,7 @@ header {
     padding: 1rem 2rem;
     margin: 0;
   }
+  /* Start button appears slightly lighter in mobile view */
   .section1_start {
     background-color:hsl(0, 0%, 50%);
     border:1px solid hsl(0, 0%, 50%);
@@ -180,7 +182,7 @@ header {
   width: 100%;
 }
 .section2_leftcol {
-  max-width:55%;
+  max-width:60%;
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -194,14 +196,10 @@ header {
   color: hsl(0, 0%, 10%)
 }
 .section2_rightcol {
-    /* padding: 2rem 0; */
   border-left:1px solid  hsl(0, 0%, 85%);
-  /* width:40%; */
-  /* width:50% */
 }
 .section2_rightcol img {
   width: 35%;
-  /* height: auto; */
   height: 100%;
   padding-left:1rem;
   padding-right: 1rem;
@@ -226,7 +224,6 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-right: 1rem;
-  /* flex: 0 0 auto; */
 }
 .section2_rightcol_container:first-child {
   padding-top: 0;
@@ -258,7 +255,7 @@ header {
   }
   .section2_rightcol img {
     width: 100%;
-    padding: 0;
+    padding: 1rem 0;
   }
   .section2_container_text {
     padding-left: 1rem;
@@ -281,7 +278,6 @@ header {
 
 .section3_row {
   display:flex;
-  /* width: 100%; */
 }
 .section3_row_top {
   margin-bottom: 2rem;
@@ -306,18 +302,19 @@ header {
   padding-bottom: 0.5rem;
 }
 @media only screen and (max-width: 650px){
-  .section3_head {
-    padding:2rem 0;
-    text-align: center;
-  }
+
   .section3 {
     display: block;
     background-color: hsl(0, 0%, 100%);
-    padding: 2rem 1rem;
+    padding: 0 2rem 2rem 1rem;
     border-bottom:2.5px solid  hsl(0, 0%, 85%);
+  }
+  .section3_head {
+    padding-bottom:1rem;
   }
   .section3_row {
     display: block;
+    margin-bottom: 0;
   }
   .section3_item:nth-child(0n+2) {
     margin-right:0;
@@ -332,9 +329,6 @@ header {
   .section3_item p {
     display: none;
   }
-  .section3_row_top {
-    margin-bottom: 0;
-  }
 }
 /* Section 4: Thesis  */
 .section4_head_mobile {
@@ -345,7 +339,7 @@ header {
   width: 100%;
 }
 .section4_main{
-  max-width:55%;
+  max-width:60%;
   padding: 0 1.5rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -374,14 +368,15 @@ header {
 @media only screen and (max-width: 650px){
   .section4_main{
     min-width:100%;
-    padding: 0 0 1.5rem 0;
+    padding: 0 0 2rem 0;
   }
   .section4_head {
     display:none;
   }
   .section4_head_mobile {
     display:block;
-    padding:2rem 0;
+    padding-top:2rem;
+    padding-bottom: 1rem;
     text-align: center;
   }
   .section4_item_container,
