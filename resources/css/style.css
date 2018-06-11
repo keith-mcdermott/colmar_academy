@@ -200,7 +200,7 @@ header {
 }
 .section2_rightcol img {
   width: 35%;
-  height: 100%;
+  height: auto;
   padding-left:1rem;
   padding-right: 1rem;
 }
@@ -256,7 +256,7 @@ header {
   .section2_rightcol img {
     width: 100%;
     padding: 1rem 0;
-  }
+/  }
   .section2_container_text {
     padding-left: 1rem;
   }
