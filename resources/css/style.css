@@ -76,7 +76,7 @@ header {
   display: none;
 }
 /* 650px breakpoint*/
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 850px){
   header {
     justify-content: space-between;
   }
@@ -145,7 +145,7 @@ header {
   color:hsl(0, 0%, 35%);
   text-decoration: none;
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 850px){
   .section1 {
     display: block;
     width: 100%;
@@ -237,7 +237,7 @@ header {
 .section2_container_link a{
   color:hsl(210, 100%, 60%);
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 850px){
   .section2_leftcol {
     display: none;
   }
@@ -301,7 +301,7 @@ header {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 850px){
 
   .section3 {
     display: block;
@@ -407,7 +407,7 @@ header {
 .footer_text_wide a {
   padding-right: 1rem;
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 850px){
   .footer_text_wide {
     display: none;
   }
